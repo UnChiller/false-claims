@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="dark" style="color-scheme: dark;">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" href="chat.css">
+    </head>
+    <body>
+        <div class="flex flex-col text-sm md:pb-9">
+            <article id="p1" class="w-full scroll-mb-[var(--thread-trailing-height,150px)] text-token-text-primary focus-visible:outline-2 focus-visible:outline-offset-[-4px]">
+                <div class="m-auto text-base py-[18px] px-3 md:px-4 w-full md:px-5 lg:px-4 xl:px-5">
+                    <div class="mx-auto flex flex-1 gap-4 text-base md:gap-5 lg:gap-6 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem]">
+                        <div class="group/conversation-turn relative flex w-full min-w-0 flex-col">
+                            <div class="flex-col gap-1 md:gap-3">
+                                <div class="flex max-w-full flex-col flex-grow">
+                                    <div class="min-h-8 text-message flex w-full flex-col items-end gap-2 whitespace-normal break-words text-start [.text-message+&amp;]:mt-5">
+                                        <div class="flex w-full flex-col gap-1 empty:hidden items-end rtl:items-start">
+                                            <div class="relative max-w-[var(--user-chat-width,70%)] rounded-3xl bg-token-message-surface px-5 py-2.5">
+                                                <div class="whitespace-pre-wrap" id="c1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="p2" class="w-full scroll-mb-[var(--thread-trailing-height,150px)] text-token-text-primary focus-visible:outline-2 focus-visible:outline-offset-[-4px]">
+                <div class="m-auto text-base py-[18px] px-3 md:px-4 w-full md:px-5 lg:px-4 xl:px-5">
+                    <div class="mx-auto flex flex-1 gap-4 text-base md:gap-5 lg:gap-6 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem]">
+                        <div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+                            <div class="flex-col gap-1 md:gap-3">
+                                <div class="flex max-w-full flex-col flex-grow">
+                                    <div class="min-h-8 text-message flex w-full flex-col items-end gap-2 whitespace-normal break-words text-start [.text-message+&amp;]:mt-5">
+                                        <div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+                                            <div class="markdown prose w-full break-words dark:prose-invert dark" id="c2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="p3" class="w-full scroll-mb-[var(--thread-trailing-height,150px)] text-token-text-primary focus-visible:outline-2 focus-visible:outline-offset-[-4px]">
+                <div class="m-auto text-base py-[18px] px-3 md:px-4 w-full md:px-5 lg:px-4 xl:px-5">
+                    <div class="mx-auto flex flex-1 gap-4 text-base md:gap-5 lg:gap-6 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem]">
+                        <div class="group/conversation-turn relative flex w-full min-w-0 flex-col">
+                            <div class="flex-col gap-1 md:gap-3">
+                                <div class="flex max-w-full flex-col flex-grow">
+                                    <div class="min-h-8 text-message flex w-full flex-col items-end gap-2 whitespace-normal break-words text-start [.text-message+&amp;]:mt-5">
+                                        <div class="flex w-full flex-col gap-1 empty:hidden items-end rtl:items-start">
+                                            <div class="relative max-w-[var(--user-chat-width,70%)] rounded-3xl bg-token-message-surface px-5 py-2.5">
+                                                <div class="whitespace-pre-wrap" id="c3"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="p4" class="w-full scroll-mb-[var(--thread-trailing-height,150px)] text-token-text-primary focus-visible:outline-2 focus-visible:outline-offset-[-4px]">
+                <div class="m-auto text-base py-[18px] px-3 md:px-4 w-full md:px-5 lg:px-4 xl:px-5">
+                    <div class="mx-auto flex flex-1 gap-4 text-base md:gap-5 lg:gap-6 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem]">
+                        <div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+                            <div class="flex-col gap-1 md:gap-3">
+                                <div class="flex max-w-full flex-col flex-grow">
+                                    <div class="min-h-8 text-message flex w-full flex-col items-end gap-2 whitespace-normal break-words text-start [.text-message+&amp;]:mt-5">
+                                        <div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+                                            <div class="markdown prose w-full break-words dark:prose-invert dark" id="c4">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="p5" class="w-full scroll-mb-[var(--thread-trailing-height,150px)] text-token-text-primary focus-visible:outline-2 focus-visible:outline-offset-[-4px]">
+                <div class="m-auto text-base py-[18px] px-3 md:px-4 w-full md:px-5 lg:px-4 xl:px-5">
+                    <div class="mx-auto flex flex-1 gap-4 text-base md:gap-5 lg:gap-6 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem]">
+                        <div class="group/conversation-turn relative flex w-full min-w-0 flex-col">
+                            <div class="flex-col gap-1 md:gap-3">
+                                <div class="flex max-w-full flex-col flex-grow">
+                                    <div class="min-h-8 text-message flex w-full flex-col items-end gap-2 whitespace-normal break-words text-start [.text-message+&amp;]:mt-5">
+                                        <div class="flex w-full flex-col gap-1 empty:hidden items-end rtl:items-start">
+                                            <div class="relative max-w-[var(--user-chat-width,70%)] rounded-3xl bg-token-message-surface px-5 py-2.5">
+                                                <div class="whitespace-pre-wrap" id="c5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="p6" class="w-full scroll-mb-[var(--thread-trailing-height,150px)] text-token-text-primary focus-visible:outline-2 focus-visible:outline-offset-[-4px]">
+                <div class="m-auto text-base py-[18px] px-3 md:px-4 w-full md:px-5 lg:px-4 xl:px-5">
+                    <div class="mx-auto flex flex-1 gap-4 text-base md:gap-5 lg:gap-6 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem]">
+                        <div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+                            <div class="flex-col gap-1 md:gap-3">
+                                <div class="flex max-w-full flex-col flex-grow">
+                                    <div class="min-h-8 text-message flex w-full flex-col items-end gap-2 whitespace-normal break-words text-start [.text-message+&amp;]:mt-5">
+                                        <div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+                                            <div class="markdown prose w-full break-words dark:prose-invert dark" id="c6">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="p7" class="w-full scroll-mb-[var(--thread-trailing-height,150px)] text-token-text-primary focus-visible:outline-2 focus-visible:outline-offset-[-4px]">
+                <div class="m-auto text-base py-[18px] px-3 md:px-4 w-full md:px-5 lg:px-4 xl:px-5">
+                    <div class="mx-auto flex flex-1 gap-4 text-base md:gap-5 lg:gap-6 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem]">
+                        <div class="group/conversation-turn relative flex w-full min-w-0 flex-col">
+                            <div class="flex-col gap-1 md:gap-3">
+                                <div class="flex max-w-full flex-col flex-grow">
+                                    <div class="min-h-8 text-message flex w-full flex-col items-end gap-2 whitespace-normal break-words text-start [.text-message+&amp;]:mt-5">
+                                        <div class="flex w-full flex-col gap-1 empty:hidden items-end rtl:items-start">
+                                            <div class="relative max-w-[var(--user-chat-width,70%)] rounded-3xl bg-token-message-surface px-5 py-2.5">
+                                                <div class="whitespace-pre-wrap" id="c7"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article id="p8" class="w-full scroll-mb-[var(--thread-trailing-height,150px)] text-token-text-primary focus-visible:outline-2 focus-visible:outline-offset-[-4px]">
+                <div class="m-auto text-base py-[18px] px-3 md:px-4 w-full md:px-5 lg:px-4 xl:px-5">
+                    <div class="mx-auto flex flex-1 gap-4 text-base md:gap-5 lg:gap-6 md:max-w-3xl lg:max-w-[40rem] xl:max-w-[48rem]">
+                        <div class="group/conversation-turn relative flex w-full min-w-0 flex-col agent-turn">
+                            <div class="flex-col gap-1 md:gap-3">
+                                <div class="flex max-w-full flex-col flex-grow">
+                                    <div class="min-h-8 text-message flex w-full flex-col items-end gap-2 whitespace-normal break-words text-start [.text-message+&amp;]:mt-5">
+                                        <div class="flex w-full flex-col gap-1 empty:hidden first:pt-[3px]">
+                                            <div class="markdown prose w-full break-words dark:prose-invert dark" id="c8">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </body>
+    <script src="chat.js"></script>
+</html>
