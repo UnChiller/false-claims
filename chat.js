@@ -3,26 +3,49 @@ var text = ["What is abstinence?","Abstinence refers to the practice of voluntar
 window.p1.style.display="none";
 window.c1.innerHTML=text[0];
 window.p2.style.display="none";
-window.c2.innerHTML=text[1];
 window.p3.style.display="none";
 window.c3.innerHTML=text[2];
 window.p4.style.display="none";
-window.c4.innerHTML=text[3];
 window.p5.style.display="none";
 window.c5.innerHTML=text[4];
 window.p6.style.display="none";
-window.c6.innerHTML=text[5];
-window.p7.style.display="none";
-window.p8.style.display="none";
 
-setTimeout(function(){window.p1.style.display="";
-    setTimeout(function(){window.p2.style.display="";
-        setTimeout(function(){window.p3.style.display="";
-            setTimeout(function(){window.p4.style.display="";
-                setTimeout(function(){window.p5.style.display="";
-                    setTimeout(function(){window.p6.style.display="";},1000);
-                },1000);
-            },1000);
-        },1000);
-    },1000);
-},1000);
+function displayWordByWord(element, text, callback, index = 0) {
+    if (index < text.length) {
+        element.innerHTML += text[index] + " "; // Add the next word
+        setTimeout(() => displayWordByWord(element, text, callback, index + 1), 10); // Delay for the next word
+    } else if (callback) {
+        callback(); // Call the next step when all words are displayed
+    }
+}
+
+function displayMessages() {
+    setTimeout(function() {
+        window.p1.style.display = ""; // Show p1
+        setTimeout(function() {
+            window.p2.style.display = ""; // Show p2
+            displayWordByWord(window.c2, text[1].split(" "), function() { // Display text[1] word by word
+                setTimeout(function() {
+                    window.p3.style.display = ""; // Show p3
+                    setTimeout(function() {
+                        window.p4.style.display = ""; // Show p4
+                        displayWordByWord(window.c4, text[3].split(" "), function() { // Display text[3] word by word
+                            setTimeout(function() {
+                                window.p5.style.display = ""; // Show p5
+                                setTimeout(function() {
+                                    window.p6.style.display = ""; // Show p6
+                                    displayWordByWord(window.c6, text[5].split(" "), function() {
+                                        console.log("All messages displayed!");
+                                    });
+                                }, 1000);
+                            }, 1000);
+                        });
+                    }, 1000);
+                }, 1000);
+            });
+        }, 1000);
+    }, 1000);
+}
+
+// Start displaying messages
+displayMessages();
